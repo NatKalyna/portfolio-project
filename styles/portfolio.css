@@ -6,7 +6,7 @@
 }
 
 body {
-  font-size: var(--default-font-family);
+  font-family: var(--default-font-family);
 }
 
 h1,
@@ -23,14 +23,20 @@ h1 {
   font-size: 96px;
 }
 
+h2 {
+  font-size: 64px;
+}
+
 p {
   font-family: var(--default-font-family);
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .header {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 160px 5px;
 }
 
 .header h2 {
@@ -53,4 +59,46 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 25px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+.title-project {
+  margin-bottom: 40px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4pxs;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 25px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.4;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .title-project {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .header {
+    padding: 80px 5px;
+  }
+
+  .project-description {
+    padding: 0px;
+    text-align: center;
+  }
 }
